@@ -24,6 +24,7 @@ public class studentController {
     public CsrfToken getcsrf(HttpServletRequest req){
         return (CsrfToken) req.getAttribute("_csrf");
     }
+    
     @GetMapping("/studentinfo")
     public List<student> getStud(){
         return students;
